@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5264F8FEE8DFCF755264B473 /* Pods_TestDemo2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654862323A9D0A6F58D421FA /* Pods_TestDemo2.framework */; };
 		D28450FF1F9AED6D00AD79A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D28450FE1F9AED6D00AD79A6 /* main.m */; };
 		D28451021F9AED6D00AD79A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D28451011F9AED6D00AD79A6 /* AppDelegate.m */; };
 		D28451051F9AED6D00AD79A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D28451041F9AED6D00AD79A6 /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20AA159A3557C616FCF7D27F /* Pods-TestDemo2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemo2/Pods-TestDemo2.debug.xcconfig"; sourceTree = "<group>"; };
+		2978053795F7854243821D2C /* Pods-TestDemo2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo2.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemo2/Pods-TestDemo2.release.xcconfig"; sourceTree = "<group>"; };
+		654862323A9D0A6F58D421FA /* Pods_TestDemo2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemo2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28450FA1F9AED6D00AD79A6 /* TestDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28450FE1F9AED6D00AD79A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D28451001F9AED6D00AD79A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5264F8FEE8DFCF755264B473 /* Pods_TestDemo2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3342B2E2957A030D7C59CA0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				654862323A9D0A6F58D421FA /* Pods_TestDemo2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C46609AF8005D449E024DA4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20AA159A3557C616FCF7D27F /* Pods-TestDemo2.debug.xcconfig */,
+				2978053795F7854243821D2C /* Pods-TestDemo2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D28450F11F9AED6D00AD79A6 = {
 			isa = PBXGroup;
 			children = (
 				D28450FC1F9AED6D00AD79A6 /* TestDemo2 */,
 				D28450FB1F9AED6D00AD79A6 /* Products */,
+				C46609AF8005D449E024DA4C /* Pods */,
+				3342B2E2957A030D7C59CA0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D28451111F9AED6D00AD79A6 /* Build configuration list for PBXNativeTarget "TestDemo2" */;
 			buildPhases = (
+				EE62CD37C8BD3532354470E8 /* [CP] Check Pods Manifest.lock */,
 				D28450F61F9AED6D00AD79A6 /* Sources */,
 				D28450F71F9AED6D00AD79A6 /* Frameworks */,
 				D28450F81F9AED6D00AD79A6 /* Resources */,
+				8DDB0E161019DC338A8B0362 /* [CP] Embed Pods Frameworks */,
+				C39D208F69ACD03EABBBCB23 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8DDB0E161019DC338A8B0362 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestDemo2/Pods-TestDemo2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C39D208F69ACD03EABBBCB23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestDemo2/Pods-TestDemo2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE62CD37C8BD3532354470E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D28450F61F9AED6D00AD79A6 /* Sources */ = {
@@ -270,6 +345,7 @@
 		};
 		D28451121F9AED6D00AD79A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20AA159A3557C616FCF7D27F /* Pods-TestDemo2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestDemo2/Info.plist;
@@ -281,6 +357,7 @@
 		};
 		D28451131F9AED6D00AD79A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2978053795F7854243821D2C /* Pods-TestDemo2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestDemo2/Info.plist;
